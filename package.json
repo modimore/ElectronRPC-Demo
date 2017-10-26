@@ -1,0 +1,25 @@
+{
+  "name": "electronrpc-demo",
+  "version": "1.0.0",
+  "description": "A Sample Electron application demonstrating use of ZeroRPC client-side.",
+  "keywords": ["electron", "rpc", "zerorpc", "python"],
+  "main": "main.js",
+  "dependencies": {
+    "electron": "^1.7.8",
+    "express": "^4.16.1",
+    "zerorpc": "^0.9.7"
+  },
+  "devDependencies": {
+    "electron-packager": "^9.1.0",
+    "electron-rebuild": "^1.6.0"
+  },
+  "scripts": {
+    "start": "start.bat",
+    "postinstall": "electron-rebuild"
+  },
+  "author": {
+    "name": "Quinn Mortimer",
+    "email": "quinn.mortimer@gmail.com"
+  },
+  "license": "0BSD"
+}

@@ -1,0 +1,6 @@
+future==0.16.0
+gevent==1.2.2
+greenlet==0.4.12
+msgpack-python==0.4.8
+pyzmq==16.0.2
+zerorpc==0.6.1
