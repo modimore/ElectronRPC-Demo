@@ -14,12 +14,13 @@
     "electron-rebuild": "^1.6.0"
   },
   "scripts": {
-    "start": "start.bat",
+    "start": "start",
     "postinstall": "electron-rebuild"
   },
   "author": {
     "name": "Quinn Mortimer",
     "email": "quinn.mortimer@gmail.com"
   },
+  "repository": "github:modimore/ElectronRPC-Demo",
   "license": "0BSD"
 }

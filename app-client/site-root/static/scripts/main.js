@@ -1,4 +1,5 @@
-const zerorpc = require("zerorpc")
+const {remote} = require("electron")
+const zerorpc = remote.require("zerorpc")
 const rpc_client = new zerorpc.Client()
 rpc_client.connect("tcp://127.0.0.1:4242")
 

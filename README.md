@@ -30,34 +30,31 @@ ZeroRPC server.
 ## Setup ##
 Since this project is written in two languages each with a separate runtime,
 setting up both a Node.js/Electron and Python environment for the project is
-necessary.
+necessary. ZeroMQ should be set up before both environments.
 
-*Note: Where OS-specific, examples and scripts here are for Windows 10.*
+*Note: Where OS-specific, scripts included in this repo are for Windows.*
+
+#### General ####
+1. Install [ZeroMQ][zeromq]
+
+#### Node.js/Electron Setup ####
+1. Ensure that you have a working setup for [node-gyp][node-gyp]
+  - This will involve installing Python 2.7 (whether or not you want the python
+    part of your application to use Python 3) and a C/C++ compiler toolchain
+    for your platform if you do not already have these.
+2. Run `npm install` for the project
 
 #### Python Setup ####
-One command will pretty much get you up and running, `pip install zerorpc`.
+One command will pretty much get you up and running.
+
+1. Run `pip install zerorpc`
 
 For development, creating a virtualenv is not strictly necessary. The scripts
 included in this example use one because it is good practice, but also because
 it makes a working Python interpreter available to distributions created with
 electron-packager for the same platform. Without it, either an existing Python
-installation must be relied upon or the python parts of the application must be
+installation must be relied upon or the Python parts of the application must be
 bundled another way.
-
-#### Node.js/Electron Setup ####
-This is only a little bit more complicated than the Python setup, but there's
-an additional trick you can do to allow you to develop faster and delay
-use of electron-packager. Required steps are as follows.
-
-1. Install [ZeroMQ][zeromq]
-2. Ensure that you have a working setup for [node-gyp][node-gyp]
-3. Run `npm install` for the project
-
-Additionally, you can use this last step make your development process easier.
-
-* Create a symlink to your projects's node_modules in the electron dist directory
-  * On windows (from project root, requires elevation):  
-    `mklink /D node_modules\electron\dist\resources\node_modules node_modules`
 
 [zerorpc]: http://www.zerorpc.io
 [electron]: https://www.electron.atom.io

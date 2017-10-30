@@ -2,6 +2,6 @@
 
 PUSHD
 CALL activate_env.bat
-electron .
+electron main.js
 CALL deactivate_env.bat
 POPD
